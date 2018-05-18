@@ -13,7 +13,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.formLogin().loginPage("/accounts/unauthorized").permitAll()
-                .and().authorizeRequests()
+                .and().antMatcher("/**").authorizeRequests()
                 .requestMatchers(CorsUtils::isPreFlightRequest).permitAll()
                 .antMatchers("/accounts/login").permitAll()
                 .anyRequest().authenticated()
