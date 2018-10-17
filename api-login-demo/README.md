@@ -11,5 +11,5 @@ ApiLoginDemoApplication
 使用
 ===================================
 
-启动后，通过Postman请求http://localhost:8080/contents时，会响应Unauthorized，使用http://localhost:8080/accounts/login登录后，再请求则响应Contents。
+启动后，通过Postman请求 http://localhost:8080/contents 时，会响应Unauthorized，使用 http://localhost:8080/accounts/login 登录后，再请求则响应Contents。
 
